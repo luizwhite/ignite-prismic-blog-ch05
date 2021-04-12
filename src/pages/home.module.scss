@@ -1,1 +1,70 @@
-// TODO
+.postsListContainer {
+  max-width: 700px;
+  margin-top: 80px;
+
+  > div {
+    & + div {
+      margin-top: 3rem;
+    }
+
+    button.nextPageButton {
+      background-color: unset;
+      padding: 4px 0;
+
+      color: var(--pink);
+      font-weight: 600;
+      font-size: 1.125rem;
+
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.7);
+      }
+    }
+  }
+
+  > img {
+    margin-bottom: 60px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: rgba(255, 87, 178, 0.5);
+    }
+  }
+
+  h3 {
+    color: var(--gray-200);
+    font-weight: normal;
+    font-size: 1.125rem;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+.infoContainer {
+  time,
+  span {
+    color: var(--gray-300);
+    font-size: 0.875rem;
+  }
+
+  > div {
+    display: inline-flex;
+    align-items: center;
+
+    & + div {
+      margin-left: 1.625rem;
+    }
+
+    svg {
+      margin-right: 0.625rem;
+      color: var(--gray-300);
+    }
+  }
+}
