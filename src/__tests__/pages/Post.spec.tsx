@@ -224,7 +224,7 @@ describe('Post', () => {
     const getStaticPathsContext: GetStaticPathsContext = {};
 
     const response = (await getStaticPaths(
-      getStaticPathsContext
+      getStaticPathsContext,
     )) as GetStaticPathsResult;
 
     expect(response.paths).toEqual(getStaticPathsReturn);
@@ -239,7 +239,7 @@ describe('Post', () => {
     };
 
     const response = (await getStaticProps(
-      getStaticPropsContext
+      getStaticPropsContext,
     )) as GetStaticPropsResult;
 
     expect(response.props.post).toEqual(postReturn);
@@ -251,7 +251,7 @@ describe('Post', () => {
     render(<Post post={postProps} />);
 
     screen.getByText('Como utilizar Hooks');
-    screen.getByText('25 mar 2021');
+    screen.getByText('25 Mar 2021');
     screen.getByText('Joseph Oliveira');
     screen.getByText('4 min');
 
