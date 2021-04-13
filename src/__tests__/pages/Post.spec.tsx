@@ -251,7 +251,7 @@ describe('Post', () => {
     render(<Post post={postProps} />);
 
     screen.getByText('Como utilizar Hooks');
-    screen.getByText('25 Mar 2021');
+    screen.getByText('25 mar 2021');
     screen.getByText('Joseph Oliveira');
     screen.getByText('4 min');
 
